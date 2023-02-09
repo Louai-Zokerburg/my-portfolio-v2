@@ -3,7 +3,6 @@ import Image from 'next/image';
 import orbit_one from '../../assets/icons/orbit_1.svg';
 import orbit_two from '../../assets/icons/orbit_2.svg';
 import orbit_three from '../../assets/icons/orbit_3.svg';
-// import orbit_four from '../../assets/icons/orbit_4.svg';
 import coding from '../../assets/icons/coding.svg';
 import react from '../../assets/icons/react.svg';
 import download from '../../assets/icons/download.svg';

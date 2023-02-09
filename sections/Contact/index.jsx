@@ -50,7 +50,7 @@ const Contact = () => {
             <Image className='w-4  group-hover:translate-x-2 duration-300' src={arrow} alt='instagram icon' />
             </div>
 
-            <p className='text-white font-semibold text-lg'>@louai_dourov</p>
+            <p className='text-white font-semibold text-lg'>Louai_Boumediene</p>
 
           </Link>
           <Link href='/' className='group  flex flex-col gap-y-8 glass-eff glass-eff border-2 p-4 rounded-lg border-border_color  duration-300 hover:translate-y-[-16px]'>

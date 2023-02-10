@@ -15,7 +15,7 @@ const About = () => {
         <SectionTitle text='About Me' icon={about_me} />
 
         <div className='w-full flex flex-col justify-start items-center lg:flex-row'>
-          <article className='glass-eff border-2 p-4 rounded-lg border-border_color translate-y-[25px] mx-4 animate-float lg:translate-y-0 lg:mx-0 lg:absolute lg:mr-[45%]'>
+          <article data-aos='fade-right' className='z-10 glass-eff border-2 p-4 rounded-lg border-border_color translate-y-[25px] mx-4 animate-float lg:translate-y-0 lg:mx-0 lg:absolute lg:mr-[45%]'>
             <p className='text-sm text-white lg:text-lg leading-6'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sit
               nostrum nemo harum cum repellat laudantium quia fuga ratione!
@@ -29,10 +29,10 @@ const About = () => {
             </p>
           </article>
 
-          <Image src={me} className='lg:ml-auto' />
+          <Image data-aos='fade-left' src={me} className='lg:ml-auto' />
         </div>
 
-        <div className='w-full flex flex-col justify-start items-stretch gap-x-4 mt-8 lg:flex-row'>
+        <div data-aos='fade-up' className='w-full flex flex-col justify-start items-stretch gap-x-4 mt-8 lg:flex-row'>
            {
             skills.map(skill => <SkillCard icon={skill.icon} title={skill.title} desc={skill.desc} subSkills={skill.subSkills}/>)
            }

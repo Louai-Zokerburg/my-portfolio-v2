@@ -36,4 +36,8 @@
   .icon {
     @apply w-[32px] h-[32px] rounded-full p-[6px] lg:w-[40px] lg:h-[40px] lg:p-2
   }
+
+  .nav-link {
+    @apply w-fit mx-auto relative text-lg font-semibold text-white_color hover:text-primary_color duration-300 cursor-pointer pb-2  after:absolute after:bottom-0 after:left-0 after:rounded after:h-1 after:duration-300 after:w-0 after:bg-primary_color hover:after:w-full;
+  }
 }

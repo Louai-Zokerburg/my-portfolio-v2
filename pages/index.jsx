@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Footer from '../components/Footer';
 
 const Home = () => {
   useEffect(() => {
@@ -25,6 +26,8 @@ const Home = () => {
       <Portfolio />
 
       <Contact />
+
+      <Footer />
     </>
   );
 };

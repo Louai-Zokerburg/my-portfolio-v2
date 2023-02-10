@@ -41,3 +41,12 @@
     @apply w-fit mx-auto relative text-lg font-semibold text-white_color hover:text-primary_color duration-300 cursor-pointer pb-2  after:absolute after:bottom-0 after:left-0 after:rounded after:h-1 after:duration-300 after:w-0 after:bg-primary_color hover:after:w-full;
   }
 }
+
+
+.active {
+  color: #65FF7E;
+}
+
+.active::after {
+  width: 100%;
+}

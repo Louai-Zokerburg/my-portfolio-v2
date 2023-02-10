@@ -15,7 +15,7 @@ import CtaButton from '../../components/CtaButton'
 
 const Contact = () => {
   return (
-    <section className='section'>
+    <section className='section bg-second_bg pb-[5vh]' id='contact'>
 
       <div className='inner-container'>
       <SectionTitle text='Get in Touch With Me' icon={contact} />

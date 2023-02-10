@@ -10,7 +10,7 @@ import SkillCard from '../../components/SkillCard';
 
 const About = () => {
   return (
-    <section className='section bg-second_bg pb-[5vh]'>
+    <section className='section bg-second_bg pb-[5vh]' id='about'>
       <div className='inner-container'>
         <SectionTitle text='About Me' icon={about_me} />
 

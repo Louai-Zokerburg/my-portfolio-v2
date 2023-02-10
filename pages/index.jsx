@@ -2,6 +2,7 @@ import About from '../sections/About';
 import Hero from '../sections/Hero';
 import Contact from '../sections/Contact';
 import NavBar from '../components/NavBar';
+import Portfolio from '../sections/Portfolio';
 
 import { useEffect } from 'react';
 
@@ -20,6 +21,8 @@ const Home = () => {
       <Hero />
 
       <About />
+
+      <Portfolio />
 
       <Contact />
     </>

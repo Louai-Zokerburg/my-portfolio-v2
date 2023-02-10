@@ -7,12 +7,13 @@ export const navLinks = [
         text: 'About',
         to: 'about'
     },
+    
+    {
+        text: 'Portfolio',
+        to: 'portfolio'
+    },
     {
         text: 'Contact',
         to: 'contact'
-    },
-    {
-        text: 'Portfolio',
-        to: 'protfolio'
     },
 ]

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import {Link} from 'react-scroll';
 
 import logo from '../assets/icons/logo.svg';
 import menu from '../assets/icons/menu.svg';
@@ -30,8 +30,7 @@ const NavBar = () => {
         />
 
         {/* Desktop Menu  */}
-        <DesktopMenu />
-
+        <DesktopMenu toggleMenu={toggleMenu}/>
         {/* Mobile Menu  */}
         <MobileMenu toggleMenu={toggleMenu} menuOpen={menuOpen} />
       </div>
@@ -41,14 +40,22 @@ const NavBar = () => {
 
 export default NavBar;
 
-const DesktopMenu = () => {
+const DesktopMenu = ({toggleMenu}) => {
   return (
     <ul className='hidden lg:flex justify-center items-center gap-x-6 text-white_color'>
       {navLinks.map((link) => (
         <li>
-          <Link className='nav-link' href={link.to}>
-            {link.text}
-          </Link>
+          <Link
+              onClick={() => toggleMenu()}
+              className='nav-link'
+              activeClass='active'
+              to={link.to}
+              duration={300}
+              spy={true}
+              smooth={true}
+            >
+              {link.text}
+            </Link>
         </li>
       ))}
 

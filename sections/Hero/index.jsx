@@ -12,7 +12,7 @@ import CtaButton from '../../components/CtaButton';
 
 const Hero = () => {
   return (
-    <section className='section'>
+    <section className='section' id='hero'>
       <Image
         src={react}
         className='absolute top-[5vh] left-[-32px] w-32 h-32 animate-orbit_three_spin'
